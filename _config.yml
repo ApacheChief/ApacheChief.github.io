@@ -1,14 +1,12 @@
-title: Data Science Project Showcase
+title: ITD214 - Applied Data Science Project
 author:
   name: GitHub User
-  email: your-email@domain.com
+  email:dennistan2026@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Write an description for your site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  This is the site where I store my datascience project edning Mar 2026
 
 # Build settings
 
