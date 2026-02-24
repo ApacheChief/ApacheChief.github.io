@@ -4,13 +4,33 @@ author: Dennis Tan (8903784Y)
 title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
-## Project Background
+## 1. Project Background
 This is my project for ITD214 Applied Data Science Project. This module is in partial fulfillment of Post Diploma Certificate (PDC) 2 Applied Data Science
 
 The purpose of this content is to showcase the work completed for the above module. This is a team project in which members are required to source and scrape data from the web and apply Machine Learning (ML) techniques to generate insights, outputs, and recommendations in accordance with the CRISP-DM framework (Wirth & Hipp, 2000). For the purpose of this project, only stages 1 to 5 of the CRISP-DM framework are required.
 The title of the project is: **“Enhancing Sportswear Apps User Experience through Review Analytics.”** Anonymised data was obtained from Kaggle’s dataset **“Sportswear App Reviews (Google Play)”** by Kris Bruurs (Oct/Nov 2025). The data was curated through Google Play, which complies with Google Play’s terms and aligns with GDPR (EU) and PDPA (Singapore) standards (Google Cloud, n.d.; PDPC, n.d.).
-## Work Accomplished
-Document your work done to accomplish the outcome
+## 2. Work Accomplished
+## 2.1 Data Preparation 
+• 	Cleaning and preprocessing: lowercasing, punctuation removal, stopwords, lemmatisation, negation handling.
+• 	Feature engineering: review length, time features, sentiment labels.
+• 	Handling missing data (e.g., sparse , skewed ).
+• 	Dataset recap: 6,446 reviews → cleaned dataset of 6,328 rows × 12 columns.
+## 2.2 Modelling 
+• 	Topic Modelling (Objective 1):
+• 	LDA (coherence score tuning, interpretable clusters).
+• 	BERTopic (contextual but fragmented clusters).
+• 	Comparative analysis (cross‑validation of insights).
+
+## 2.3 Evaluation
+• 	Model performance metrics (coherence vs perplexity).
+• 	Analytical Limitations and Gaps:
+• 	Reliance on rating scores as proxy for satisfaction.
+• 	Sparse developer response data.
+• 	Brand imbalance.
+• 	External factors not incorporated.
+
+## 2.4 AI Ethics: 
+Privacy, Fairness, Accuracy, Accountability, Transparency issues addressed.
 
 ### Data Preparation
 ![CRISP-DM Framework](https://github.com/user-attachments/assets/2de5b520-94f2-4190-a5b7-41c95f225592)
