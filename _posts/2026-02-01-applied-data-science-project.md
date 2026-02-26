@@ -259,6 +259,7 @@ In addition, the Hierarchical Topic Tree illustrates how topics merge at differe
 </div>
  
 (Only top portion of hierarchy shown due to the full tree’s length. The top-level merges illustrate how sematically related topics cluster together.)
+
 Although the upper portion of the BERTopic hierarchy tree is dominated by repeated positive terms such as good, great, and love, this does not imply that positive sentiment dominates the dataset. This clustering occurs because BERTopic groups semantically similar embeddings at the highest level, and positive adjectives tend to be short, frequent, and lexically similar across brands. As a result, they merge early in the hierarchy due to their semantic proximity rather than their sentiment weight.
 Where sentiment is concerned, dedicated sentiment analysis provides a more accurate representation of polarity distribution across brands. As shown earlier, the dataset contains substantial negative feedback despite the positive lexical cluster at the top of the hierarchy. The hierarchy tree therefore reflects semantic similarity, not sentiment dominance.
 As the tree branches downward, the model separates into more specific themes, including app usability issues, customer service concerns, and product‑related feedback. This hierarchical structure demonstrates how BERTopic captures both broad sentiment patterns and fine‑grained subtopics.
