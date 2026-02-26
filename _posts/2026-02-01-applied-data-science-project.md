@@ -91,10 +91,17 @@ iii)	content
 ## 2.2.3 Exploratory Data Analysis (EDA)
 Initial EDA provided the schema of the dataset (ref: 2 – herein ref here refers to the Python script section number) Fig 2.1 & 2.2
 
+<div style="text-align:center; margin-bottom: 1rem;"><div><strong>Fig 2.1 — Schema Snapshot</strong></div><img src="/assets/images/Fig2_1 - Schema.png" width="650"></div>
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.2 — Data Audit</strong></div>
+  <img src="/assets/images/Fig2_2 - Data Audit.png" width="650">
+</div>
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.3 — reply_content Audit Output</strong></div>
+  <img src="/assets/images/Fig2_3 - reply_content.png" width="650">
+</div>
 
-![Schema](/assets/images/Fig2_1%20-%20Schema.png)
-![Data Audit](/assets/images/Fig2_2%20-%20Data%20Audit.png)
-![Reply Content](/assets/images/Fig2_3%20-%20reply_content.png)
+
  
 Initial data audit revealed sparsity of ‘reply_content’ ~ 93% (Fig 2.3) and attribute was hence not used.
 Audit of Missing Values and Spares columns (Fig 2.4) reveals that there was no missing values in other columns besides “reply_content”.
