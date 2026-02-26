@@ -255,7 +255,7 @@ The BERTopic model produced several visual outputs that help interpret topic str
 In addition, the Hierarchical Topic Tree illustrates how topics merge at different levels of granularity. This hierarchical structure is unique to BERTopic and provides insight into how related themes cluster together, such as usability issues, customer service concerns, and product quality feedback (Fig 3.9).
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 3.9 — Intermediate Step</strong></div>
-  <img src="/assets/images/Fig3_9 - BERT Hierarhical.png" width="650">
+  <img src="/assets/images/Fig3_9 - BERT Hierarchical.png" width="650">
 </div>
  
 (Only top portion of hierarchy shown due to the full tree’s length. The top-level merges illustrate how sematically related topics cluster together.)
