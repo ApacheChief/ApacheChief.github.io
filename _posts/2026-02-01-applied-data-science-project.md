@@ -164,7 +164,16 @@ Thereafter, bi-grams extraction and brand-wise comparisons were made (Fig  2.10)
 </div>
 
 For better visualisations, bigrams plot was constructed (Fig  2.11a, 2.11b)
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.11a — Bigrams (Part A)</strong></div>
+  <img src="/assets/images/Fig2_11a - Bigrams .png" width="650">
+</div>
 
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.11b — Bigrams Output (Part B)</strong></div>
+  <img src="/assets/images/Fig2_11b - Bigrams Output.png" width="650">
+</div
+  
 The above visualisations, give conflicting signals and justify modelling to gain actual insights.
 It was decided to use LDA and BERTopic with transformer embeddings. LDA and BERTopic complements each other as the former covers the ‘big picture’ or breadth (Yadav et al., 2025; Kushwaha & Kaur, 2025) while the latter captures depth or details (Grootendorst, 2022; EECSI, 2024) .
 
