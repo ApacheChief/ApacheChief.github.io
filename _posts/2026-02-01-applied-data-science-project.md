@@ -96,10 +96,6 @@ Initial EDA provided the schema of the dataset (ref: 2 – herein ref here refer
   <div><strong>Fig 2.2 — Data Audit</strong></div>
   <img src="/assets/images/Fig2_2 - Data Audit.png" width="650">
 </div>
-<div style="text-align:center; margin-bottom: 1rem;">
-  <div><strong>Fig 2.3 — reply_content Audit Output</strong></div>
-  <img src="/assets/images/Fig2_3 - reply_content.png" width="650">
-</div>
 
 
  
