@@ -138,7 +138,7 @@ This section assigns appropriate dtype to brand  also compute review length to g
   <img src="/assets/images/Fig2_7 - Data Cleaning and Transformation.png" width="650">
 </div>
 
-2.4 Post Transformation EDA
+## 2.4 Post Transformation EDA
 Words curated from research articles (Maalej et al., 2016; Guzman & Maalej, 2014; Iacob & Harrison, 2013)  were used to plot unigrams for a feel of the topics therein (Fig 2.8a , 2.8b).
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 2.8a — Unigram Extraction</strong></div>
@@ -217,7 +217,7 @@ Perplexity was also used to in the evaluation and the best (lowest) score was 15
 Perplexity favours more to less topics. In this case, Coherence takes precedence over Perplexity as research have shown that Coherence correlates with  better human interpretability (Chang et al., 2009; Stevens et al., 2012; Röder et al., 2015).
 LDA was implemented with , which produced coherent and interpretable topics for this dataset. While it is technically possible to run an extended sweep (e.g., k =5 to k =20 ) to search for a mathematically optimal value, such exhaustive tuning is typically undertaken by beginners who rely solely on LDA for insight.
 In this project, LDA serves as the breadth component, complemented by depth‑oriented modelling using BERTopic and transformer embeddings. Given this dual‑method architecture, additional LDA hyperparameter sweeps would offer diminishing returns and do not materially change the overall conclusions.
-3.2.2 Comparison  of LDA’s 5 vs 10 topics 
+## 3.2.2 Comparison  of LDA’s 5 vs 10 topics 
 As seen below the 10 topic is fragmented and contained overlapping themes like app usability, customer service, and brand mentions appear across several topic. This fragmentation reduces interpretability making the 5-topic more suitable
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 3.6 — 5 vs 10 Topics</strong></div>
