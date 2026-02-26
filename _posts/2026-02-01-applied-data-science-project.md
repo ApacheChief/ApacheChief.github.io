@@ -367,20 +367,25 @@ This indicates that developer engagement is generally low across the four brands
 
 However, the non‑missing replies reveal a clear pattern:
 • 	Gymshark is the only brand that consistently replies to users.
+
 • 	Nike, Adidas, and Puma show almost no engagement, with replies appearing only as isolated exceptions.
 This suggests that Gymshark adopts a more proactive approach to community interaction compared to the larger brands
 ## 5.2 Quality of Replies: Gymshark Personalised vs Adidas 
 A qualitative scan of the reply texts shows two distinct styles (Fig 5.2):
-Gymshark
+## Gymshark
 • 	Replies are personalised, conversational, and context‑specific.
+
 • 	Tone is friendly and aligned with their community‑driven brand identity.
+
 • 	Responses address the user’s issue directly.
-Adidas
+## Adidas
 • 	Replies are copy‑paste, generic, and repeated across multiple reviews.
+
 • 	Example from your dataset:
+
 “Thanks for your review. Latest version was mistakenly our internal testing build… Please update to the latest version.”
 • 	This message appears 6 times, indicating a templated approach.
-Nike & Puma
+## Nike & Puma
 • 	Almost no replies, suggesting minimal engagement (Fig.5.1).	
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 5.2 — Sample Reply Content (Qualitative View)</strong></div>
@@ -388,27 +393,221 @@ Nike & Puma
 </div>
  
 This contrast highlights how developer communication style varies significantly across brands.
+## 6. Actionable UX Recommendations
+This chapter translates the topic modelling insights into practical recommendations for improving the user experience (UX) across the four sportswear brands. The recommendations are grounded in the operational pain points surfaced in the topics and supported by established operations management principles.
+
+## 6.1 Address Operational Pain Points: Inventory, Delivery, Customer Service
+Topic modelling revealed recurring operational issues across Nike, Adidas, and Puma, particularly in:
+• 	delivery delays
+
+• 	order fulfilment errors
+
+• 	inventory availability
+
+• 	refund and return processes
+
+These issues directly affect customer satisfaction because they occur at critical touchpoints in the purchase journey.
+## Recommendations:
+• 	Improve inventory visibility
+
+Implement real‑time stock updates to reduce “item unavailable” or “cannot add to cart” complaints.
+
+• 	Strengthen fulfilment reliability
+
+Optimise last‑mile delivery partners and introduce proactive delivery notifications.
+
+• 	Streamline customer service workflows
+
+Reduce response times and automate triage for common issues (e.g., refund status, order tracking).
+These improvements address the operational bottlenecks that surfaced repeatedly in LDA and BERTopic topics.
+
+## 6.2 Enhance App & Experience Issues: Navigation, Sizing, Checkout, Reply Engagement
+The topic models highlighted several UX‑specific issues:
+
+• 	navigation difficulties (“not user friendly”, “hard to find”)
+
+• 	checkout friction (“payment error”, “cant checkout”)
+
+• 	sizing uncertainty (especially for apparel brands)
+
+• 	low developer engagement (except Gymshark)
+
+## Recommendations:
+
+• 	Improve navigation pathways
+
+Simplify menu structures and reduce the number of taps required to complete common tasks.
+
+• 	Optimise checkout flow
+
+Introduce error‑proofing, auto‑save carts, and alternative payment methods.
+
+• 	Add sizing guidance
+
+Use fit‑prediction tools or community‑sourced sizing feedback to reduce returns.
+
+• 	Increase developer engagement
+
+Adopt Gymshark’s personalised reply model to build trust and close the feedback loop.
+
+These enhancements directly target the friction points identified in the topic clusters.
+
+## 6.3 Grounding in Operations Management Principles
+
+The recommendations align with established operations management frameworks:
+
+• 	Heizer (2020) emphasises the importance of process reliability and service quality in shaping customer satisfaction.
+
+• 	Slack (2022) highlights designing for flow, reducing variability, and managing bottlenecks.
+Checkout errors, app crashes, and navigation issues represent UX bottlenecks that disrupt flow.
+
+## 6.4 Strategic Takeaway: Recommendations Tied to Satisfaction Drivers
+
+The strategic takeaway is clear:
+
+Operational reliability + smooth app experience + responsive developer engagement = higher user satisfaction.
+
+The  topic modelling results show that:
+
+• 	operational issues generate the most friction
+
+• 	app usability drives positive experiences
+
+• 	developer replies reinforce trust and loyalty
+
+Therefore, the brands should prioritise:
+
+1. 	Fixing operational bottlenecks (delivery, inventory, refunds)
+   
+2. 	Improving app usability (navigation, checkout, sizing)
+  
+3. 	Strengthening engagement (personalised replies, faster response cycles)
+   
+These actions directly address the satisfaction drivers surfaced in your topic models and position the brands to improve both user experience and long‑term loyalty.
+________________________________________
+## 7. Limitations
+
+While the topic modelling approach provides meaningful insights into customer experiences across the four sportswear brands, several limitations should be acknowledged to contextualise the findings.
+
+## 7.1 Data Limitations
+
+## Sparse Developer Replies
+
+The “reply_content” field is 93.25% missing, which restricts the depth of analysis on developer engagement. Only Gymshark shows consistent replies, limiting cross‑brand comparison.
+
+## Short Review Texts
+
+Many reviews are extremely short (e.g., “great!”, “good app”), reducing the richness of semantic information available for topic extraction. Short texts can lead to:
+
+• 	less stable topic assignments
+
+• 	overlapping themes
+
+• 	reduced interpretability
+
+## Imbalanced Brand Representation
+
+Adidas, Nike, and Puma have significantly more reviews than Gymshark. This imbalance may influence:
+
+• 	topic frequency
+
+• 	cluster density
+
+• 	perceived brand‑level patterns
+
+Gymshark’s concentrated topics may partly reflect smaller sample size.
+
+## 7.2 Methodological Limitations
+
+## LDA’s Bag‑of‑Words Constraints
+
+LDA does not capture context or word order. As a result:
+
+• 	semantically similar phrases may be split across topics
+
+• 	nuanced meanings (e.g., “slow app” vs “slow delivery”) may be conflated
+
+• 	topics may appear broader or more generic
+
+## BERTopic Sensitivity to Parameters
+
+Although BERTopic provides richer contextual embeddings, it is sensitive to:
+
+• 	UMAP dimensionality reduction
+
+• 	HDBSCAN clustering parameters
+
+• 	random seed stability
+
+Small parameter changes can produce different topic structures, affecting reproducibility.
+
+## No Sentiment Modelling
+This project covers Objective 1 only and  focuses solely on topic modelling.
+Without sentiment analysis:
+• 	topics cannot be directly linked to positive or negative experiences
+• 	emotional intensity of themes remains unquantified
+• 	satisfaction drivers must be inferred indirectly from topic content
+This is consistent with the project scope but limits interpretive depth.
+
+## 7.3 Interpretive Limitations
+## Topics Reflect Frequency, Not Importance
+Topic modelling identifies what users talk about most — not necessarily what matters most to them. High‑frequency themes (e.g., usability, delivery) may overshadow niche but critical issues.
+## Ambiguity in Short Phrases
+Single‑word or two‑word reviews can be ambiguous. For example:
+
+• 	“good app”
+
+• 	“nice”
+
+• 	“bad”
+
+These provide limited context, making topic assignment less precise.
+## Brand‑Level Inference is Correlational
+
+Differences in topic distribution across brands:
+
+• 	reflect user discussions
+
+• 	do not prove causal relationships
+
+• 	may be influenced by brand size, user demographics, or marketing cycles
+
+Interpretations should therefore be viewed as indicative rather than definitive.
+
+## 7.4 Summary
+
+These limitations do not undermine the value of the findings but highlight the need for cautious interpretation. Future work could incorporate sentiment analysis, richer metadata, or longitudinal tracking to strengthen the insights derived from topic modelling.
+
+## 8. Conclusion
+
+This project applied topic modelling (LDA and BERTopic) to 6,446 customer reviews across four sportswear brands to uncover the dominant themes shaping user experience. Five interpretable themes emerged consistently across both models: app usability, operational issues, delivery and fulfilment, price and value perception, and brand affinity.
+
+Brand‑wise analysis showed that Nike, Adidas, and Puma share similar topic distributions, while Gymshark stands out with concentrated themes around app experience and community‑driven engagement. Developer replies, although sparse overall, revealed meaningful differences in communication style, with Gymshark providing personalised responses compared to the templated or absent replies from other brands.
+
+The findings highlight that operational reliability, smooth app navigation, and responsive developer engagement are central drivers of user experience. These insights informed the UX recommendations in Chapter 6, which emphasise improving operational processes, enhancing app usability, and strengthening feedback loops.
+
+Overall, topic modelling proved effective in extracting actionable insights from large‑scale textual data, offering a scalable approach for understanding customer needs and guiding UX improvements.
 
 
-## AI Ethics
+## 9. AI Ethics
 
-## Privacy
+## 9.1 Privacy
 Given that app reviews can sometimes contain personal identifiers, the data was scraped from Google Play, where reviews are pre‑moderated by Google. This ensures compliance with Google Play’s terms and alignment with GDPR (EU) and PDPA (Singapore) standards. In addition, our team reviewed the dataset to confirm that no sensitive personal information was retained, thereby safeguarding user privacy during analysis.
 
-## Fairness
+## 9.2 Fairness
 **Risk:** Bias in the dataset (e.g., reviews skewed toward certain brands, demographics, or regions) can lead to unfair insights.  
 
 **Mitigation:** Balanced sampling is applied, limitations are documented, and results are not overgeneralised. Any bias or imbalances are acknowledged through **Analytical Limitations and Gaps** (see slide 47 PPT).
 
-## Accuracy
+## 9.3 Accuracy
 **Risk:** Machine Learning models may misclassify sentiment or context, leading to misleading recommendations.
 **Mitigation:** Validate models with cross‑checks (e.g., LDA vs. BERTopic), and clearly state confidence levels and error margins.
 
-## Accountability
+## 9.4  Accountability
 **Risk:** If insights are misused (e.g., companies act on flawed recommendations), responsibility can be unclear.
 **Mitigation:** We maintain transparent documentation of methods, assumptions, and limitations. Team members take responsibility for their own ouput, all modelling choices were documented in scripts and slides for lecturers' review.
 
-## Transparency
+## 9.5 Transparency
 **Risk:** Some machine learning models can be complex and difficult to interpret, which may obscure how decisions are made.  
 **Mitigation:** We used interpretable models where possible (e.g., Naive Bayes, Decision Trees, Random Forest feature importance) and complemented them with explainable outputs such as topic modelling visualisations and labelled clusters. The rationale for model choices was documented to ensure clarity and lecturers' review.
 
