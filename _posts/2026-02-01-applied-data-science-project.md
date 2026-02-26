@@ -118,7 +118,7 @@ Fig 2.4	Fig 2.5
   <img src="/assets/images/Fig2_5 - Audit of Missing Values 2 of 2.png" width="650">
 </div>
 
-## 2.3 Cleaning & Preprocessing: Lowercasing, stopwords, lemmatization.
+## 2.3 Cleaning & Preprocessing: Lowercasing, stopwords, lemmatization
 ## 2.3.1 Duplicate and Missing Content Audit
 Audit was done on possible duplicates and  missing contents on the attributes in use – brand, content and scores. The audit confirmed that  there were no duplicates, missing contents and scores were valid within the range of 1 to 5 (Fig 2.6).
 
