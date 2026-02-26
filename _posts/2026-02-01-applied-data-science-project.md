@@ -74,7 +74,7 @@ Below is summary table of brand scale and its expected review volume.
  
 From the above table, Nike tops the chart in terms of size followed by adidas while Gymshark is the smallest of the 4 players.  Subequent exploratory will reveal that Gymshark’s review is substantially smaller than the rest of the brands.
 
-### Data Preparation
+### 2.2 Data Preparation
 ## 2.2.1 Ethical Considerations
 Our  anonymised dataset was obtained from Kaggle (Bruurs, 2005) and extracted using open-source google-play-scraper Python library. Reviews are pre-moderated by Google for quality and trustworthiness and since data use and collection complies with Google Play’s terms, it therefore aligns with GDPR(EU) and PDPA(Singapore) standards.
 ## 2.2.2 Size and Attribute of Dataset
