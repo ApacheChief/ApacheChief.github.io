@@ -206,7 +206,7 @@ With the above done,  modelling  next…
 Hyperparameter tuning of 5, 10 and 15 topics was performed  and 5 topics came up top at a Coherence score of  0.504 (Fig 3.4).
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 3.4 — Tuning & Coherence Score</strong></div>
-  <img src="/assets/images/Fig3_4 - Tuning & Coherence Score.png" width="650">
+  <img src="/assets/images/Fig3_4  - Tuning & Coherence Score.png" width="650">
 </div>
  
 Perplexity was also used to in the evaluation and the best (lowest) score was 15 topics of – 8.92 (Fig 3.5).
