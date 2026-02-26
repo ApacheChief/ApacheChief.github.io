@@ -13,30 +13,47 @@ The title of the project is: **“Enhancing Sportswear Apps User Experience thro
 ###  II.I Business & Data Understanding
 ## Business Understanding
 • 	Goal: uncover recurring themes in user reviews to improve sportswear app UX.
+
 • 	Why topic modelling matters: identifies operational pain points and UX strengths.
+
 ## Data Understanding
-• 	Dataset: 6,446 Google Play reviews (Nike, Adidas, Puma, Gymshark).
-• 	Key fields used: brand, score, content.
-• 	Observations: skew toward positive ratings, Gymshark fewer reviews, varied text length.
+• 	Dataset: 6,446 Google Play reviews (Nike, Adidas, Puma, Gymshark)
+
+• 	Key fields used: brand, score, content
+
+• 	Observations: skew toward positive ratings, Gymshark fewer reviews, varied text length
+
 ## II.II Data Preparation 
-• 	Cleaning and preprocessing: lowercasing, punctuation removal, stopwords, lemmatisation, negation handling.
-• 	Feature engineering: review length, time features, sentiment labels.
-• 	Handling missing data (e.g., sparse , skewed ).
-• 	Dataset recap: 6,446 reviews → cleaned dataset of 6,328 rows × 12 columns.
+
+• 	Cleaning and preprocessing: lowercasing, punctuation removal, stopwords, lemmatisation, negation handling
+
+• 	Feature engineering: review length, time features, sentiment labels
+
+• 	Handling missing data (e.g., sparse , skewed )
+
+• 	Dataset recap: 6,446 reviews → cleaned dataset of 6,328 rows × 12 columns
 ## II.III Modelling 
+
 • 	Topic Modelling (Objective 1):
-• 	LDA (coherence score tuning, interpretable clusters).
-• 	BERTopic (contextual but fragmented clusters).
-• 	Comparative analysis (cross‑validation of insights).
+
+• 	LDA (coherence score tuning, interpretable clusters)
+
+• 	BERTopic (contextual but fragmented clusters)
+
+• 	Comparative analysis (cross‑validation of insights)
+
 
 ## II.IV. Evaluation & Recommendations
-• 	Model performance metrics (coherence vs perplexity).
+• 	Model performance metrics (coherence vs perplexity)
+
 • 	Analytical Limitations and Gaps:
-• 	Reliance on rating scores as proxy for satisfaction.
-• 	Sparse developer response data.
-• 	Brand imbalance.
-• 	External factors not incorporated.
-.   Appropriate recommendations grounded on operations management and marketing principles
+
+  • 	Reliance on rating scores as proxy for satisfaction
+  • 	Sparse developer response data
+  • 	Brand imbalance
+  • 	External factors not incorporated
+.  Appropriate recommendations grounded on operations management and marketing principles
+
 ## II.V AI Ethics
  Addressed: Privacy, Fairness, Accuracy, Accountability, Transparency issues.
  
@@ -49,6 +66,7 @@ The title of the project is: **“Enhancing Sportswear Apps User Experience thro
 
 ## 1.2	Objectives
 To achieve this, our team decided to apply text analytics of topic modelling, sentiment analysis and predictive modelling, which will all contribute to the overall insights and with these insights recommend enhancements to the app.
+
 The first objective that I’m responsible for applies topic modelling to suss out what users talk about to derive recurring themes across the 4 brands (Nike, adidas, Puma & Gymshark).
 
  
