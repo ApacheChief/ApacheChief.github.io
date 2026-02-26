@@ -107,9 +107,20 @@ Initial data audit revealed sparsity of ‘reply_content’ ~ 93% (Fig 2.3) and 
 Audit of Missing Values and Spares columns (Fig 2.4) reveals that there was no missing values in other columns besides “reply_content”.
 Fig 2.4	Fig 2.5
  	 
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.3 — reply_content Audit Output</strong></div>
+  <img src="/assets/images/Fig2_3 - reply_content.png" width="650">
+</div>
 
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.4 — Audit of Missing Values (1 of 2)</strong></div>
+  <img src="/assets/images/Fig2_4 - Audit of Missing 1 of 2.png" width="650">
+</div>
 
-
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.5 — Audit of Missing Values (2 of 2)</strong></div>
+  <img src="/assets/images/Fig2_5 - Audit of Missing Values 2 of 2.png" width="650">
+</div>
 
 
 ### Modelling
