@@ -284,7 +284,7 @@ Across the topics, several patterns emerge:
 • 	Promotions & Rewards: Topics containing discount, sale, points, and reward highlight user engagement with promotional mechanics( appears in full BERTopic model; not in top 10).
 • 	Positive Experience Clusters: Several topics contain repeated positive expressions such as good, great, love, and amazing. These reflect general satisfaction but also contribute to the high‑level positive cluster observed in the hierarchy tree.
 Compared to LDA, BERTopic produces more contextually distinct and semantically meaningful topics (Grootendorst, 2022; EECSI, 2024), particularly for app‑related and service‑related themes. This complements the earlier LDA results by providing deeper insight into the specific issues and experiences driving user feedback.
-3.3.3	Brand-wise Topic Distribution
+## 3.3.3	Brand-wise Topic Distribution
 The brand‑wise topic distribution provides insight into how different themes are expressed across Nike, Adidas, Puma, and Gymshark. By mapping the BERTopic topics to each brand’s reviews, several patterns emerge (Fig 3.11):
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 3.11 — Brand‑wise Distribution</strong></div>
@@ -299,7 +299,60 @@ These patterns align closely with the earlier sentiment analysis, reinforcing th
 
 
 
-### Evaluation
+## Chapter 4: Evaluation
+## 4. Evaluation
+This chapter consolidates the topic modelling outputs (LDA and BERTopic) into interpretable themes and examines how these themes are distributed across the four sportswear brands.
+
+## 4.1 Semantic Labelling: Five Interpretable Themes
+Across both LDA and BERTopic, five coherent themes consistently emerged:
+## i.	App Usability & Navigation
+Terms such as easy use, easy navigate, user friendly, and app easy reflect customer emphasis on smooth app interactions.
+## ii.	Operational & Technical Issues
+Topics containing login, crash, slow, payment, and update highlight recurring app reliability concerns.
+## iii.	Delivery & Fulfilment
+Words such as fast delivery, order, shipping, and time indicate that fulfilment processes are a major part of the customer experience.
+## iv.	Price & Value Perception
+Mentions of price high, great deal, and value show that customers are highly price‑aware and responsive to promotions.
+## v.	Brand Affinity & Product Appeal
+Phrases like love adidas, love puma, love nike, and good quality reflect strong emotional attachment and product satisfaction.
+These themes form the basis for interpreting brand‑specific patterns (Fig 4.1).
+Fig 4.1 - Mapping of Topic IDs to Semantic Themes
+Broad Theme	LDA Topics (Your 5 earlier)	BERTopic Topics (From your screenshot)	Merged Interpretation
+1. App Usability & Navigation	Topic 0: nice, item, cant, wait, available, cart, app	Topic 2: open, update, crashing, app open
+Topic 7: slow, loading, lag, slow app	Both models detect friction in app navigation, loading, and general usability.
+2. Brand Affinity & Product Appeal + Usability	Topic 1: great, app, easy, love, quality, product, service	Topic 4: shopping app, deal, app great deal
+Topic 8: price, price high, great price	Positive sentiment toward the brand and app, often tied to deals, pricing, and ease of use.
+3. Delivery & Fulfilment	Topic 2: order, customer, return, day, get, service	Topic 0: refund, return, customer care
+Topic 3: shipping, fast delivery, easy order	Both models capture fulfilment reliability, returns, and customer service interactions.
+4. Brand Affinity & Product Appeal	Topic 3: love, best, clothes, gymshark, quality	Topic 1: love shoe, jordan, sneaker
+Topic 6: love adidas, adidas love	Strong brand love and product specific praise (shoes, apparel, brand identity).
+5. Operational & Technical Issues	Topic 4: work, doesnt, cant, payment, error, slow	Topic 5: log, login, password issues
+Topic 2 & 7 (also fit here): crashing, slow, lag	Technical failures: login issues, payment errors, crashes, slow performance.
+BERTopic naturally produced 10 micro‑topics because it clusters text at a more granular, sentence‑level resolution. However, for consistency and comparability with LDA — which produced 5 broader, keyword‑based topics — we collapsed BERTopic’s 10 micro‑topics into the same 5 macro‑themes. This ensures both models operate at the same conceptual level, making triangulation and interpretation clearer. The 10 BERTopic topics are shown for transparency and auditability, but the final analysis uses the collapsed 5‑theme structure
+
+4.2 Brand‑Wise Distribution
+The brand‑wise topic distribution reveals how frequently each theme appears across Nike, Adidas, Puma, and Gymshark (Fig 4.2).
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 4.2 — Brand‑Wise Topic Distribution</strong></div>
+  <img src="/assets/images/Fig4_2 - Brand Wise Distribution.png" width="650">
+</div>
+ 
+
+Key observations:
+• 	Nike, Adidas, and Puma show relatively similar distributions across the five themes.
+• 	Gymshark, however, is heavily concentrated in App Experience and Brand Affinity topics, with fewer operational complaints.
+• 	Nike shows higher representation in operational and technical issues.
+• 	Adidas shows stronger presence in usability and brand‑affinity themes.
+• 	Puma displays a balanced mix across all themes.
+These differences suggest that each brand attracts a distinct customer profile with different expectations and pain points.
+
+4.3 Implications: Market Share vs Operational Performance
+The topic distribution patterns have several implications:
+• 	Brands with larger review volumes (Nike, Adidas, Puma) naturally show more diverse topic representation, reflecting broader customer bases.
+• 	Nike’s higher operational issue frequency may indicate friction points that could affect customer retention despite strong market presence.
+• 	Adidas’s strong usability and brand‑affinity signals suggest a more positive app experience and stronger customer loyalty.
+• 	Gymshark’s concentrated positive clusters align with its smaller but highly engaged community‑driven user base.
+• 	Price‑related themes across all brands indicate that value perception remains a key competitive factor.
 
 ## Recommendation and Analysis
 
