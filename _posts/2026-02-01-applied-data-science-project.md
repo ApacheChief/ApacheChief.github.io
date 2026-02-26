@@ -118,6 +118,55 @@ Fig 2.4	Fig 2.5
   <img src="/assets/images/Fig2_5 - Audit of Missing Values 2 of 2.png" width="650">
 </div>
 
+2.3 Cleaning & Preprocessing: Lowercasing, stopwords, lemmatization.
+2.3.1 Duplicate and Missing Content Audit
+Audit was done on possible duplicates and  missing contents on the attributes in use – brand, content and scores. The audit confirmed that  there were no duplicates, missing contents and scores were valid within the range of 1 to 5 (Fig 2.6).
+
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.6 — Audit of Duplicates and Missing Contents</strong></div>
+  <img src="/assets/images/Fig2_6 - Audit of Dup and Missing Contents.png" width="650">
+</div>
+
+
+
+ 
+2.3.2 Data Cleaning & Transformation
+This section assigns appropriate dtype to brand  also compute review length to get a feel of the text length therein (Fig 2.7).
+
+ <div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.7 — Data Cleaning and Transformation</strong></div>
+  <img src="/assets/images/Fig2_7 - Data Cleaning and Transformation.png" width="650">
+</div>
+
+2.4 Post Transformation EDA
+Words curated from research articles (Maalej et al., 2016; Guzman & Maalej, 2014; Iacob & Harrison, 2013)  were used to plot unigrams for a feel of the topics therein (Fig 2.8a , 2.8b).
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.8a — Unigram Extraction</strong></div>
+  <img src="/assets/images/Fig2_8a - Unigram.png" width="650">
+</div>
+
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.8b — Unigram Output</strong></div>
+  <img src="/assets/images/Fig2_8b - Unigram Output.png" width="650">
+</div>
+ 
+To increase semantics of tokens, bigrams were also plotted, however, further cleaning has to be done such as setting to lowercasing, stopwords , numbers and  punctuations removal. Lemmatisation was selected over stemming as research have shown that lemmatisation preserves the semantics meanings of the tokens, while stemming often produces truncated or non-dictionary forms that may distort topic representations ( Jurafsky & Martin, 2021; Manning, Raghavan, & Schutze, 2008) – Fig 2.9.
+
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.9 — Text Pre‑processing Workflow</strong></div>
+  <img src="/assets/images/Fig2_9 - Text Pre-processing.png" width="650">
+</div>
+
+Thereafter, bi-grams extraction and brand-wise comparisons were made (Fig  2.10)
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 2.10 — Bi‑grams Extraction & Brand‑wise Comparison</strong></div>
+  <img src="/assets/images/Fig2_10 Bi-grams extraction and brand-wise Comparisons.png" width="650">
+</div>
+
+For better visualisations, bigrams plot was constructed (Fig  2.11a, 2.11b)
+
+The above visualisations, give conflicting signals and justify modelling to gain actual insights.
+It was decided to use LDA and BERTopic with transformer embeddings. LDA and BERTopic complements each other as the former covers the ‘big picture’ or breadth (Yadav et al., 2025; Kushwaha & Kaur, 2025) while the latter captures depth or details (Grootendorst, 2022; EECSI, 2024) .
 
 ### Modelling
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
