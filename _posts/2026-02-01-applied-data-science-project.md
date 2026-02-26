@@ -278,13 +278,21 @@ The table below summarises the key BERTopic topics and their representative term
  
 
 Across the topics, several patterns emerge:
+
 • 	App Usability & Navigation: Topics containing terms such as easy use, navigate, quick, and interface reflect user experiences with app functionality and ease of use.
+
 • 	Customer Service & Delivery: Topics with terms like service, delivery, refund, and support capture operational and service‑related feedback.
+
 • 	Product Quality & Fit: Topics referencing fit, comfort, size, and quality relate to product‑specific evaluations ( appears in full BERTopic model; not in top 10)
+
 • 	Promotions & Rewards: Topics containing discount, sale, points, and reward highlight user engagement with promotional mechanics( appears in full BERTopic model; not in top 10).
+
 • 	Positive Experience Clusters: Several topics contain repeated positive expressions such as good, great, love, and amazing. These reflect general satisfaction but also contribute to the high‑level positive cluster observed in the hierarchy tree.
+
 Compared to LDA, BERTopic produces more contextually distinct and semantically meaningful topics (Grootendorst, 2022; EECSI, 2024), particularly for app‑related and service‑related themes. This complements the earlier LDA results by providing deeper insight into the specific issues and experiences driving user feedback.
+
 ## 3.3.3	Brand-wise Topic Distribution
+
 The brand‑wise topic distribution provides insight into how different themes are expressed across Nike, Adidas, Puma, and Gymshark. By mapping the BERTopic topics to each brand’s reviews, several patterns emerge (Fig 3.11):
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 3.11 — Brand‑wise Distribution</strong></div>
@@ -292,9 +300,13 @@ The brand‑wise topic distribution provides insight into how different themes a
 </div>
  
 • 	Nike shows higher concentrations of topics related to refunds, returns, app crashes, and slow loading, indicating operational and technical frustrations.
+
 • 	Adidas exhibits strong representation in brand‑affinity topics (e.g., “love adidas”), suggesting higher brand loyalty and positive sentiment.
+
 • 	Puma displays a more balanced distribution across usability, delivery, and price‑related topics, reflecting a mix of functional and transactional feedback.
+
 • 	Gymshark is dominated by positive experience topics, consistent with the sentiment analysis results showing overwhelmingly favourable reviews.
+
 These patterns align closely with the earlier sentiment analysis, reinforcing the triangulated insight that Nike receives more negative operational feedback, while Adidas and Gymshark attract more positive brand‑driven responses. BERTopic therefore complements LDA by providing a more granular, context‑aware view of how each brand’s customer experience differs
 
 
@@ -305,14 +317,19 @@ This chapter consolidates the topic modelling outputs (LDA and BERTopic) into in
 
 ## 4.1 Semantic Labelling: Five Interpretable Themes
 Across both LDA and BERTopic, five coherent themes consistently emerged:
+
 ## i.	App Usability & Navigation
 Terms such as easy use, easy navigate, user friendly, and app easy reflect customer emphasis on smooth app interactions.
+
 ## ii.	Operational & Technical Issues
 Topics containing login, crash, slow, payment, and update highlight recurring app reliability concerns.
+
 ## iii.	Delivery & Fulfilment
 Words such as fast delivery, order, shipping, and time indicate that fulfilment processes are a major part of the customer experience.
+
 ## iv.	Price & Value Perception
 Mentions of price high, great deal, and value show that customers are highly price‑aware and responsive to promotions.
+
 ## v.	Brand Affinity & Product Appeal
 Phrases like love adidas, love puma, love nike, and good quality reflect strong emotional attachment and product satisfaction.
 These themes form the basis for interpreting brand‑specific patterns (Fig 4.1).
