@@ -37,7 +37,7 @@ The title of the project is: **“Enhancing Sportswear Apps User Experience thro
 • 	Brand imbalance.
 • 	External factors not incorporated.
 .   Appropriate recommendations grounded on operations management and marketing principles
-## II.V AI Ethics: 
+## II.V AI Ethics
  Addressed: Privacy, Fairness, Accuracy, Accountability, Transparency issues.
  
 ## Chapter 1: Introduction & Framework
@@ -47,17 +47,17 @@ The requirement of this project is to make use of ML techniques that we have lea
 The purpose of this content is to showcase the work completed for the above module. This is a team project in which members are required to source and scrape data from the web and apply Machine Learning (ML) techniques to generate insights, outputs, and recommendations in accordance with the CRISP-DM framework (Wirth & Hipp, 2000). For the purpose of this project, only stages 1 to 5 of the CRISP-DM framework are required.
 The title of the project is: **“Enhancing Sportswear Apps User Experience through Review Analytics.”** Anonymised data was obtained from Kaggle’s dataset **“Sportswear App Reviews (Google Play)”** by Kris Bruurs (Oct/Nov 2025). The data was curated through Google Play, which complies with Google Play’s terms and aligns with GDPR (EU) and PDPA (Singapore) standards (Google Cloud, n.d.; PDPC, n.d.).
 
-## 1.2	Objectives: 
+## 1.2	Objectives
 To achieve this, our team decided to apply text analytics of topic modelling, sentiment analysis and predictive modelling, which will all contribute to the overall insights and with these insights recommend enhancements to the app.
 The first objective that I’m responsible for applies topic modelling to suss out what users talk about to derive recurring themes across the 4 brands (Nike, adidas, Puma & Gymshark).
 
  
-## 1.3	Methodological Framework: CRISP DM stages (cite Wirth & Hipp, 2000).
+## 1.3	Methodological Framework
 In accordance with the project requirements,  our team followed the Cross Industry Standard Process for Data Mining  (CRISP-DM). The first part of our presentation covers stages 1 to 3 (Business Understanding to Data Preparation) while the 2nd and final presentation covers 4 & 5 (Modelling and Evaluation).  Stage 6 - Deployment  is out-of-scope for the purpose of this project.
  ![CRISP-DM Framework](https://github.com/user-attachments/assets/2de5b520-94f2-4190-a5b7-41c95f225592)
                  <p align = "center"> Source: Wirth & Hipp, 2000 </p>
 
-## 1.4	Contribution: 
+## 1.4	Contribution
 The use of topic modelling to perform discovery of app users is effectively tapping on the consumer pulse of the app users on their opinions of the app.  Topic modelling with the appropriate techniques applied will uncover both the breadth and depth of users’ sentiments and gain insights in areas where the app can be enhanced/improved.
 
 ## 2.1 Business Understanding
