@@ -233,8 +233,11 @@ Perplexity was also used to in the evaluation and the best (lowest) score was 15
 </div>
  
 Perplexity favours more to less topics. In this case, Coherence takes precedence over Perplexity as research have shown that Coherence correlates with  better human interpretability (Chang et al., 2009; Stevens et al., 2012; Röder et al., 2015).
-LDA was implemented with , which produced coherent and interpretable topics for this dataset. While it is technically possible to run an extended sweep (e.g., k =5 to k =20 ) to search for a mathematically optimal value, such exhaustive tuning is typically undertaken by beginners who rely solely on LDA for insight.
+
+LDA was implemented with k=5 topics, which produced coherent and interpretable topics for this dataset. While it is technically possible to run an extended sweep (e.g., k =5 to k =20 ) to search for a mathematically optimal value, such exhaustive tuning is typically undertaken by beginners who rely solely on LDA for insight.
+
 In this project, LDA serves as the breadth component, complemented by depth‑oriented modelling using BERTopic and transformer embeddings. Given this dual‑method architecture, additional LDA hyperparameter sweeps would offer diminishing returns and do not materially change the overall conclusions.
+
 ## 3.2.2 Comparison  of LDA’s 5 vs 10 topics 
 As seen below the 10 topic is fragmented and contained overlapping themes like app usability, customer service, and brand mentions appear across several topic. This fragmentation reduces interpretability making the 5-topic more suitable
 <div style="text-align:center; margin-bottom: 1rem;">
@@ -244,8 +247,10 @@ As seen below the 10 topic is fragmented and contained overlapping themes like a
  
 
 ## 3.2.3 LDA topic Visulations (pyLDAvis) 
+
 The selected 5‑topic LDA model was visualised using pyLDAvis.
 Topic 1 (pyLDAvis indexing; equivalent to Topic 0 in the model) accounted for 28.9% of all tokens, making it the dominant topic.
+
 The top relevant terms — order, customer, dont, time, day, get, return, service, shoe — indicate that this topic captures order fulfilment and customer‑service issues, consistent with earlier EDA findings (Fig 3.7)
 
  <div style="text-align:center; margin-bottom: 1rem;">
@@ -254,15 +259,18 @@ The top relevant terms — order, customer, dont, time, day, get, return, servic
 </div>
 
 ## 3.2.4  Limitations of LDA
+
 However, LDA is shallow and may miss contextual meaning because it relies on bag‑of‑words representations (Yilmaz, 2024). To complement LDA, BERTopic — which uses transformer‑based embeddings — was applied next.
  
 
 ## 3.3	BERTopic Modelling
+
 BERTopic was instantiated using a SentenceTransformer model to generate contextual embeddings and a CountVectorizer for tokenisation. Default UMAP and HDBSCAN parameters were used unless otherwise stated. This configuration allows BERTopic to capture semantic similarity between reviews more effectively than LDA’s bag‑of‑words approach.
 
 To complement the earlier LDA results, BERTopic was applied to uncover context‑rich, transformer‑based topics that may not be detectable through traditional probabilistic modelling
 
 ## 3.3.1	BERTopic Visualisation (Intertopic Map)
+
 The BERTopic model produced several visual outputs that help interpret topic structure and semantic separation. The Intertopic Distance Map shows how topics are distributed in a two‑dimensional UMAP space, with larger circles indicating higher topic prevalence. The map demonstrates that BERTopic generates more distinct and semantically coherent clusters compared to LDA, reflecting the benefit of transformer‑based embeddings (Fig 3.8).
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 3.8 — BERT Intertopic Distance Map</strong></div>
@@ -275,11 +283,11 @@ In addition, the Hierarchical Topic Tree illustrates how topics merge at differe
   <img src="/assets/images/Fig3_9 - BERT Hierarchical Tree.png" width="650">
 </div>
  
-(Only top portion of hierarchy shown due to the full tree’s length. The top-level merges illustrate how sematically related topics cluster together.)
+(Only the top portion of the hierarchy is shown due to the full tree’s length. The top-level merges illustrate how sematically related topics cluster together.)
 
 Although the upper portion of the BERTopic hierarchy tree is dominated by repeated positive terms such as good, great, and love, this does not imply that positive sentiment dominates the dataset. This clustering occurs because BERTopic groups semantically similar embeddings at the highest level, and positive adjectives tend to be short, frequent, and lexically similar across brands. As a result, they merge early in the hierarchy due to their semantic proximity rather than their sentiment weight.
 
-Where sentiment is concerned, dedicated sentiment analysis provides a more accurate representation of polarity distribution across brands. As shown earlier, the dataset contains substantial negative feedback despite the positive lexical cluster at the top of the hierarchy. The hierarchy tree therefore reflects semantic similarity, not sentiment dominance.
+Where sentiment is concerned, dedicated sentiment analysis provides a more accurate representation of polarity distribution across brands. As shown earlier, the dataset contains substantial negative feedback despite the positive lexical cluster at the top of the hierarchy. The hierarchy tree therefore, reflects semantic similarity, not sentiment dominance.
 
 As the tree branches downward, the model separates into more specific themes, including app usability issues, customer service concerns, and product‑related feedback. This hierarchical structure demonstrates how BERTopic captures both broad sentiment patterns and fine‑grained subtopics.
 
@@ -287,6 +295,7 @@ Together, these visualisations confirm that BERTopic identifies context‑rich, 
 
 ## 3.3.2	BERTopic Topic Interpretation
 The BERTopic model generated X topics (after removing outliers), each represented by a set of semantically coherent key terms. Unlike LDA, which relies on bag‑of‑words co‑occurrence, BERTopic leverages transformer embeddings to capture contextual meaning. This results in topics that are more nuanced and better aligned with the underlying semantics of the reviews.
+
 The table below summarises the key BERTopic topics and their representative terms. These topics reflect a mix of app‑related issues, customer service concerns, product quality feedback, and general shopping experience themes (Fig 3.10).
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 3.10 — BERTopic & Representative Terms</strong></div>
@@ -400,24 +409,29 @@ This indicates that developer engagement is generally low across the four brands
  
 
 However, the non‑missing replies reveal a clear pattern:
+
 • 	Gymshark is the only brand that consistently replies to users.
 
 • 	Nike, Adidas, and Puma show almost no engagement, with replies appearing only as isolated exceptions.
+
 This suggests that Gymshark adopts a more proactive approach to community interaction compared to the larger brands
 ## 5.2 Quality of Replies: Gymshark Personalised vs Adidas 
 A qualitative scan of the reply texts shows two distinct styles (Fig 5.2):
+
 ## Gymshark
 • 	Replies are personalised, conversational, and context‑specific.
 
 • 	Tone is friendly and aligned with their community‑driven brand identity.
 
 • 	Responses address the user’s issue directly.
+
 ## Adidas
 • 	Replies are copy‑paste, generic, and repeated across multiple reviews.
 
 • 	Example from your dataset:
 
 “Thanks for your review. Latest version was mistakenly our internal testing build… Please update to the latest version.”
+
 • 	This message appears 6 times, indicating a templated approach.
 ## Nike & Puma
 • 	Almost no replies, suggesting minimal engagement (Fig.5.1).	
@@ -427,11 +441,14 @@ A qualitative scan of the reply texts shows two distinct styles (Fig 5.2):
 </div>
  
 This contrast highlights how developer communication style varies significantly across brands.
+
 ## 6. Actionable UX Recommendations
 This chapter translates the topic modelling insights into practical recommendations for improving the user experience (UX) across the four sportswear brands. The recommendations are grounded in the operational pain points surfaced in the topics and supported by established operations management principles.
 
 ## 6.1 Address Operational Pain Points: Inventory, Delivery, Customer Service
+
 Topic modelling revealed recurring operational issues across Nike, Adidas, and Puma, particularly in:
+
 • 	delivery delays
 
 • 	order fulfilment errors
@@ -442,6 +459,7 @@ Topic modelling revealed recurring operational issues across Nike, Adidas, and P
 
 These issues directly affect customer satisfaction because they occur at critical touchpoints in the purchase journey.
 ## Recommendations:
+
 • 	Improve inventory visibility
 
 Implement real‑time stock updates to reduce “item unavailable” or “cannot add to cart” complaints.
@@ -635,14 +653,17 @@ Given that app reviews can sometimes contain personal identifiers, the data was 
 
 ## 9.3 Accuracy
 **Risk:** Machine Learning models may misclassify sentiment or context, leading to misleading recommendations.
+
 **Mitigation:** Validate models with cross‑checks (e.g., LDA vs. BERTopic), and clearly state confidence levels and error margins.
 
 ## 9.4  Accountability
 **Risk:** If insights are misused (e.g., companies act on flawed recommendations), responsibility can be unclear.
+
 **Mitigation:** We maintain transparent documentation of methods, assumptions, and limitations. Team members take responsibility for their own ouput, all modelling choices were documented in scripts and slides for lecturers' review.
 
 ## 9.5 Transparency
 **Risk:** Some machine learning models can be complex and difficult to interpret, which may obscure how decisions are made.  
+
 **Mitigation:** We used interpretable models where possible (e.g., Naive Bayes, Decision Trees, Random Forest feature importance) and complemented them with explainable outputs such as topic modelling visualisations and labelled clusters. The rationale for model choices was documented to ensure clarity and lecturers' review.
 
 
