@@ -669,5 +669,5 @@ Given that app reviews can sometimes contain personal identifiers, the data was 
 
 ## Source Codes and Datasets
 ## Data & Code Access
-- [Dataset (reviews.csv)](https://github.com/ApacheChief/sportswear-topic-modelling/blob/main/data/reviews.csv)
+- [Dataset (CSV)](https://github.com/ApacheChief/sportswear-topic-modelling/blob/main/reviews.csv)
 - [Topic Modelling Notebook](https://github.com/ApacheChief/sportswear-topic-modelling/blob/main/notebooks/8903784Y-ITD_214_Project_TM.ipynb)
