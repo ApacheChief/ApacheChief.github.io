@@ -320,7 +320,7 @@ These themes form the basis for interpreting brand‑specific patterns (Fig 4.1)
   <img src="/assets/images/Fig4_1 - Mapping of Topic ID to Semantic Themes.png" width="650">
 </div>
 
-BERTopic naturally produced 10 micro‑topics because it clusters text at a more granular, sentence‑level resolution. However, for consistency and comparability with LDA — which produced 5 broader, keyword‑based topics — we collapsed BERTopic’s 10 micro‑topics into the same 5 macro‑themes. This ensures both models operate at the same conceptual level, making triangulation and interpretation clearer. The 10 BERTopic topics are shown for transparency and auditability, but the final analysis uses the collapsed 5‑theme structure
+BERTopic naturally produced 10 micro‑topics because it clusters text at a more granular, sentence‑level resolution. However, for consistency and comparability with LDA — which produced 5 broader, keyword‑based topics — we collapsed BERTopic’s 10 micro‑topics into the same 5 macro‑themes. This ensures both models operate at the same conceptual level, making triangulation and interpretation clearer. The 10 BERTopic topics are shown for transparency and auditability, but the final analysis uses the collapsed 5‑theme structure.
 
 ## 4.2 Brand‑Wise Distribution
 The brand‑wise topic distribution reveals how frequently each theme appears across Nike, Adidas, Puma, and Gymshark (Fig 4.2).
@@ -332,21 +332,62 @@ The brand‑wise topic distribution reveals how frequently each theme appears ac
 
 ## Key observations:
 • 	Nike, Adidas, and Puma show relatively similar distributions across the five themes.
+
 • 	Gymshark, however, is heavily concentrated in App Experience and Brand Affinity topics, with fewer operational complaints.
+
 • 	Nike shows higher representation in operational and technical issues.
+
 • 	Adidas shows stronger presence in usability and brand‑affinity themes.
+
 • 	Puma displays a balanced mix across all themes.
+
 These differences suggest that each brand attracts a distinct customer profile with different expectations and pain points.
 
 ## 4.3 Implications: Market Share vs Operational Performance
 The topic distribution patterns have several implications:
 • 	Brands with larger review volumes (Nike, Adidas, Puma) naturally show more diverse topic representation, reflecting broader customer bases.
+
 • 	Nike’s higher operational issue frequency may indicate friction points that could affect customer retention despite strong market presence.
+
 • 	Adidas’s strong usability and brand‑affinity signals suggest a more positive app experience and stronger customer loyalty.
+
 • 	Gymshark’s concentrated positive clusters align with its smaller but highly engaged community‑driven user base.
+
 • 	Price‑related themes across all brands indicate that value perception remains a key competitive factor.
 
-## Recommendation and Analysis
+## Chapter 5: Recommendation and Analysis
+## 5.1 Reply_Content Revisited
+The dataset contains 6,011 missing replies out of 6,446 reviews, meaning 93.25% of all reviews received no developer response.
+This indicates that developer engagement is generally low across the four brands (Fig 5.1).
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 5.1 — Reply Content Counts by Brand</strong></div>
+  <img src="/assets/images/Fig5_1 - reply_content.png" width="650">
+</div>
+ 
+
+However, the non‑missing replies reveal a clear pattern:
+• 	Gymshark is the only brand that consistently replies to users.
+• 	Nike, Adidas, and Puma show almost no engagement, with replies appearing only as isolated exceptions.
+This suggests that Gymshark adopts a more proactive approach to community interaction compared to the larger brands
+## 5.2 Quality of Replies: Gymshark Personalised vs Adidas 
+A qualitative scan of the reply texts shows two distinct styles (Fig 5.2):
+Gymshark
+• 	Replies are personalised, conversational, and context‑specific.
+• 	Tone is friendly and aligned with their community‑driven brand identity.
+• 	Responses address the user’s issue directly.
+Adidas
+• 	Replies are copy‑paste, generic, and repeated across multiple reviews.
+• 	Example from your dataset:
+“Thanks for your review. Latest version was mistakenly our internal testing build… Please update to the latest version.”
+• 	This message appears 6 times, indicating a templated approach.
+Nike & Puma
+• 	Almost no replies, suggesting minimal engagement (Fig.5.1).	
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 5.2 — Sample Reply Content (Qualitative View)</strong></div>
+  <img src="/assets/images/Fig5_2 - reply_content quali.png" width="650">
+</div>
+ 
+This contrast highlights how developer communication style varies significantly across brands.
 
 
 ## AI Ethics
