@@ -317,7 +317,6 @@ Mentions of price high, great deal, and value show that customers are highly pri
 Phrases like love adidas, love puma, love nike, and good quality reflect strong emotional attachment and product satisfaction.
 These themes form the basis for interpreting brand‑specific patterns (Fig 4.1).
 <div style="text-align:center; margin-bottom: 1rem;">
-  <div><strong>Fig 4.1 — Mapping of Topic ID to Semantic Themes</strong></div>
   <img src="/assets/images/Fig4_1 - Mapping of Topic ID to Semantic Themes.png" width="650">
 </div>
 
