@@ -200,7 +200,7 @@ Finally, we prepare a dictionary and corpus in the format required by Gensim’s
 </div>
  
 With the above done,  modelling  next…
-## 3.2 LDA Modelling: 
+## 3.2 LDA Modelling 
 ## 3.2.1 Hyperparameter Tuning
 Hyperparameter tuning of 5, 10 and 15 topics was performed  and 5 topics came up top at a Coherence score of  0.504 (Fig 3.4).
 <div style="text-align:center; margin-bottom: 1rem;">
