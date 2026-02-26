@@ -11,10 +11,10 @@ The purpose of this content is to showcase the work completed for the above modu
 The title of the project is: **“Enhancing Sportswear Apps User Experience through Review Analytics.”** Anonymised data was obtained from Kaggle’s dataset **“Sportswear App Reviews (Google Play)”** by Kris Bruurs (Oct/Nov 2025). The data was curated through Google Play, which complies with Google Play’s terms and aligns with GDPR (EU) and PDPA (Singapore) standards (Google Cloud, n.d.; PDPC, n.d.).
 ##  II. Work Accomplished
 ###  II.I Business & Data Understanding
-## Business Understanding:
+## Business Understanding
 • 	Goal: uncover recurring themes in user reviews to improve sportswear app UX.
 • 	Why topic modelling matters: identifies operational pain points and UX strengths.
-## Data Understanding:
+## Data Understanding
 • 	Dataset: 6,446 Google Play reviews (Nike, Adidas, Puma, Gymshark).
 • 	Key fields used: brand, score, content.
 • 	Observations: skew toward positive ratings, Gymshark fewer reviews, varied text length.
