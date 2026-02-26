@@ -178,16 +178,126 @@ The above visualisations, give conflicting signals and justify modelling to gain
 It was decided to use LDA and BERTopic with transformer embeddings. LDA and BERTopic complements each other as the former covers the ‘big picture’ or breadth (Yadav et al., 2025; Kushwaha & Kaur, 2025) while the latter captures depth or details (Grootendorst, 2022; EECSI, 2024) .
 
 ### Modelling
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-<img width="915" height="581" alt="image" src="https://github.com/user-attachments/assets/902f36ca-7e15-450c-aefe-d6efbac7624c" />
+## Chapter 3: Topic Modelling
+## 3.1 Importing Libraries, Corpus and Vectorisation
+Before applying topic modelling, the text data must be transformed into a numerical representation. 
+We begin by importing the necessary libraries,  “gensim (Fig 3.1) “ “scikit-learn (Fig 3.2)” 
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.1 — Importing Gensim</strong></div>
+  <img src="/assets/images/Fig3_1 - Importing Gensim.png" width="650">
+</div>
+ 
+Next, we vectorise the cleaned text using Bag of Words, filtering out overly common and rare terms (Fig 3.2). 
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.2 — Vectorisation</strong></div>
+  <img src="/assets/images/Fig3_2 - Vectorisation.png" width="650">
+</div>
+ 
+Finally, we prepare a dictionary and corpus in the format required by Gensim’s LDA implementation (Fig  3.3). 
+
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.3 — Importing Dictionary</strong></div>
+  <img src="/assets/images/Fig3_3 - Importing Dict.png" width="650">
+</div>
+ 
+With the above done,  modelling  next…
+## 3.2 LDA Modelling: 
+## 3.2.1 Hyperparameter Tuning
+Hyperparameter tuning of 5, 10 and 15 topics was performed  and 5 topics came up top at a Coherence score of  0.504 (Fig 3.4).
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.4 — Tuning & Coherence Score</strong></div>
+  <img src="/assets/images/Fig3_4 - Tuning & Coherence Score.png" width="650">
+</div>
+ 
+Perplexity was also used to in the evaluation and the best (lowest) score was 15 topics of – 8.92 (Fig 3.5).
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.5 — Perplexity</strong></div>
+  <img src="/assets/images/Fig3_5 Perplexity.png" width="650">
+</div>
+ 
+Perplexity favours more to less topics. In this case, Coherence takes precedence over Perplexity as research have shown that Coherence correlates with  better human interpretability (Chang et al., 2009; Stevens et al., 2012; Röder et al., 2015).
+LDA was implemented with , which produced coherent and interpretable topics for this dataset. While it is technically possible to run an extended sweep (e.g., k =5 to k =20 ) to search for a mathematically optimal value, such exhaustive tuning is typically undertaken by beginners who rely solely on LDA for insight.
+In this project, LDA serves as the breadth component, complemented by depth‑oriented modelling using BERTopic and transformer embeddings. Given this dual‑method architecture, additional LDA hyperparameter sweeps would offer diminishing returns and do not materially change the overall conclusions.
+3.2.2 Comparison  of LDA’s 5 vs 10 topics 
+As seen below the 10 topic is fragmented and contained overlapping themes like app usability, customer service, and brand mentions appear across several topic. This fragmentation reduces interpretability making the 5-topic more suitable
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.6 — 5 vs 10 Topics</strong></div>
+  <img src="/assets/images/Fig3_6 - 5 vs 10 topics.png" width="650">
+</div>
+ 
+
+3.2.3 LDA topic Visulations (pyLDAvis) 
+The selected 5‑topic LDA model was visualised using pyLDAvis.
+Topic 1 (pyLDAvis indexing; equivalent to Topic 0 in the model) accounted for 28.9% of all tokens, making it the dominant topic.
+The top relevant terms — order, customer, dont, time, day, get, return, service, shoe — indicate that this topic captures order fulfilment and customer‑service issues, consistent with earlier EDA findings (Fig 3.7)
+
+ <div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.7 — pyLDAvis</strong></div>
+  <img src="/assets/images/Fig3_7 - pyLDAvis.png" width="650">
+</div>
+
+3.2.4  Limitations of LDA
+However, LDA is shallow and may miss contextual meaning because it relies on bag‑of‑words representations (Yilmaz, 2024). To complement LDA, BERTopic — which uses transformer‑based embeddings — was applied next.
+ 
+
+3.3	BERTopic Modelling
+BERTopic was instantiated using a SentenceTransformer model to generate contextual embeddings and a CountVectorizer for tokenisation. Default UMAP and HDBSCAN parameters were used unless otherwise stated. This configuration allows BERTopic to capture semantic similarity between reviews more effectively than LDA’s bag‑of‑words approach.
+
+To complement the earlier LDA results, BERTopic was applied to uncover context‑rich, transformer‑based topics that may not be detectable through traditional probabilistic modelling
+
+3.3.1	BERTopic Visualisation (Intertopic Map)
+The BERTopic model produced several visual outputs that help interpret topic structure and semantic separation. The Intertopic Distance Map shows how topics are distributed in a two‑dimensional UMAP space, with larger circles indicating higher topic prevalence. The map demonstrates that BERTopic generates more distinct and semantically coherent clusters compared to LDA, reflecting the benefit of transformer‑based embeddings (Fig 3.8).
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.8 — BERT Intertopic Distance Map</strong></div>
+  <img src="/assets/images/Fig3_8 - BERT Intertopic.png" width="650">
+</div>
+ 
+In addition, the Hierarchical Topic Tree illustrates how topics merge at different levels of granularity. This hierarchical structure is unique to BERTopic and provides insight into how related themes cluster together, such as usability issues, customer service concerns, and product quality feedback (Fig 3.9).
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.9 — Intermediate Step</strong></div>
+  <img src="/assets/images/Fig3_9 - Intermediate.png" width="650">
+</div>
+ 
+(Only top portion of hierarchy shown due to the full tree’s length. The top-level merges illustrate how sematically related topics cluster together.)
+Although the upper portion of the BERTopic hierarchy tree is dominated by repeated positive terms such as good, great, and love, this does not imply that positive sentiment dominates the dataset. This clustering occurs because BERTopic groups semantically similar embeddings at the highest level, and positive adjectives tend to be short, frequent, and lexically similar across brands. As a result, they merge early in the hierarchy due to their semantic proximity rather than their sentiment weight.
+Where sentiment is concerned, dedicated sentiment analysis provides a more accurate representation of polarity distribution across brands. As shown earlier, the dataset contains substantial negative feedback despite the positive lexical cluster at the top of the hierarchy. The hierarchy tree therefore reflects semantic similarity, not sentiment dominance.
+As the tree branches downward, the model separates into more specific themes, including app usability issues, customer service concerns, and product‑related feedback. This hierarchical structure demonstrates how BERTopic captures both broad sentiment patterns and fine‑grained subtopics.
+Together, these visualisations confirm that BERTopic identifies context‑rich, semantically meaningful topics that complement the earlier LDA results.
+3.3.2	BERTopic Topic Interpretation
+The BERTopic model generated X topics (after removing outliers), each represented by a set of semantically coherent key terms. Unlike LDA, which relies on bag‑of‑words co‑occurrence, BERTopic leverages transformer embeddings to capture contextual meaning. This results in topics that are more nuanced and better aligned with the underlying semantics of the reviews.
+The table below summarises the key BERTopic topics and their representative terms. These topics reflect a mix of app‑related issues, customer service concerns, product quality feedback, and general shopping experience themes (Fig 3.10).
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.10 — BERTopic & Representative Terms</strong></div>
+  <img src="/assets/images/Fig3_10 BERTopic & Rep Terms.png" width="650">
+</div>
+ 
+
+Across the topics, several patterns emerge:
+• 	App Usability & Navigation: Topics containing terms such as easy use, navigate, quick, and interface reflect user experiences with app functionality and ease of use.
+• 	Customer Service & Delivery: Topics with terms like service, delivery, refund, and support capture operational and service‑related feedback.
+• 	Product Quality & Fit: Topics referencing fit, comfort, size, and quality relate to product‑specific evaluations ( appears in full BERTopic model; not in top 10)
+• 	Promotions & Rewards: Topics containing discount, sale, points, and reward highlight user engagement with promotional mechanics( appears in full BERTopic model; not in top 10).
+• 	Positive Experience Clusters: Several topics contain repeated positive expressions such as good, great, love, and amazing. These reflect general satisfaction but also contribute to the high‑level positive cluster observed in the hierarchy tree.
+Compared to LDA, BERTopic produces more contextually distinct and semantically meaningful topics (Grootendorst, 2022; EECSI, 2024), particularly for app‑related and service‑related themes. This complements the earlier LDA results by providing deeper insight into the specific issues and experiences driving user feedback.
+3.3.3	Brand-wise Topic Distribution
+The brand‑wise topic distribution provides insight into how different themes are expressed across Nike, Adidas, Puma, and Gymshark. By mapping the BERTopic topics to each brand’s reviews, several patterns emerge (Fig 3.11):
+<div style="text-align:center; margin-bottom: 1rem;">
+  <div><strong>Fig 3.11 — Brand‑wise Distribution</strong></div>
+  <img src="/assets/images/Fig3_11 Brand Wise Distribution - Copy.png" width="650">
+</div>
+ 
+• 	Nike shows higher concentrations of topics related to refunds, returns, app crashes, and slow loading, indicating operational and technical frustrations.
+• 	Adidas exhibits strong representation in brand‑affinity topics (e.g., “love adidas”), suggesting higher brand loyalty and positive sentiment.
+• 	Puma displays a more balanced distribution across usability, delivery, and price‑related topics, reflecting a mix of functional and transactional feedback.
+• 	Gymshark is dominated by positive experience topics, consistent with the sentiment analysis results showing overwhelmingly favourable reviews.
+These patterns align closely with the earlier sentiment analysis, reinforcing the triangulated insight that Nike receives more negative operational feedback, while Adidas and Gymshark attract more positive brand‑driven responses. BERTopic therefore complements LDA by providing a more granular, context‑aware view of how each brand’s customer experience differs
+
+
 
 ### Evaluation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ## Recommendation and Analysis
-Explain the analysis and recommendations
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ## AI Ethics
 
