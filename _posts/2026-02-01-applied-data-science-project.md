@@ -57,7 +57,7 @@ The title of the project is: **“Enhancing Sportswear Apps User Experience thro
   
   - 	External factors not incorporated
   
-.  Appropriate recommendations grounded on operations management and marketing principles
+Appropriate recommendations grounded on operations management and marketing principles
 
 ## II.V AI Ethics
  Addressed: Privacy, Fairness, Accuracy, Accountability, Transparency issues.
