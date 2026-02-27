@@ -259,7 +259,7 @@ LDA was implemented with k=5 topics, which produced coherent and interpretable t
 In this project, LDA serves as the breadth component, complemented by depth‑oriented modelling using BERTopic and transformer embeddings. Given this dual‑method architecture, additional LDA hyperparameter sweeps would offer diminishing returns and do not materially change the overall conclusions.
 
 ## 3.2.2 Comparison  of LDA’s 5 vs 10 topics 
-As seen below the 10 topic is fragmented and contained overlapping themes like app usability, customer service, and brand mentions appear across several topic. This fragmentation reduces interpretability making the 5-topic more suitable
+As seen below, the 10 topic is fragmented and contains overlapping themes like app usability, customer service, and brand mentions that appear across several topics. This fragmentation reduces interpretability, making the 5-topic more suitable
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 3.6 — 5 vs 10 Topics</strong></div>
   <img src="/assets/images/Fig3_6 - 5 vs 10 topics.png" width="650">
