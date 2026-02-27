@@ -4,7 +4,7 @@ author: Dennis Tan (8903784Y)
 title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
-## I Project Background
+## I. Project Background
 This is my project for ITD214 Applied Data Science Project. This module is in partial fulfillment of Post Diploma Certificate (PDC) 2 Applied Data Science
 
 The purpose of this content is to showcase the work completed for the above module. This is a team project in which members are required to source and scrape data from the web and apply Machine Learning (ML) techniques to generate insights, outputs, and recommendations in accordance with the CRISP-DM framework (Wirth & Hipp, 2000). For the purpose of this project, only stages 1 to 5 of the CRISP-DM framework are required.
