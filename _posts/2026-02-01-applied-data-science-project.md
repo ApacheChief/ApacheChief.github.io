@@ -187,8 +187,8 @@ Words curated from research articles (Maalej et al., 2016; Guzman & Maalej, 2014
   <div><strong>Fig 2.8b — Unigram Output</strong></div>
   <img src="/assets/images/Fig2_8b - Unigram Output.png" width="650">
 </div>
- 
-To increase semantics of tokens, bigrams were also plotted, however, further cleaning has to be done such as setting to lowercasing, stopwords , numbers and  punctuations removal. Lemmatisation was selected over stemming as research have shown that lemmatisation preserves the semantics meanings of the tokens, while stemming often produces truncated or non-dictionary forms that may distort topic representations ( Jurafsky & Martin, 2021; Manning, Raghavan, & Schutze, 2008) – Fig 2.9.
+
+To enrich the semantic representation of tokens, bigrams were also plotted. However, further cleaning was required, including lowercasing, removal of stopwords, numbers, and punctuation. Lemmatisation was selected over stemming, as research has shown that lemmatisation preserves the semantic meaning of tokens, whereas stemming often produces truncated or non‑dictionary forms that may distort topic representations (Jurafsky & Martin, 2021; Manning, Raghavan, & Schütze, 2008) – Fig. 2.9. 
 
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 2.9 — Text Pre‑processing Workflow</strong></div>
