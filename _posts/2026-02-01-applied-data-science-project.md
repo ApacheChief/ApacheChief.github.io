@@ -158,7 +158,7 @@ Fig 2.4	Fig 2.5
 
 ## 2.3 Cleaning & Preprocessing: Lowercasing, stopwords, lemmatization
 ## 2.3.1 Duplicate and Missing Content Audit
-Audit was done on possible duplicates and  missing contents on the attributes in use – brand, content and scores. The audit confirmed that there were no duplicates, missing contents and scores were valid within the range of 1 to 5 (Fig 2.6).
+An audit was conducted on the key attributes—brand, content, and scores—to check for possible duplicates and missing values. The audit confirmed that no duplicates or missing entries were present, and all scores were valid within the expected range of 1 to 5 (Fig. 2.6).
 
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 2.6 — Audit of Duplicates and Missing Contents</strong></div>
