@@ -210,10 +210,9 @@ For better visualisations, bigrams plot was also constructed (Fig  2.11a, 2.11b)
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 2.11b — Bigrams Output (Part B)</strong></div>
   <img src="/assets/images/Fig2_11b - Bigrams Output.png" width="650">
-</div
+</div>
+The visualisations provide mixed signals, underscoring the need for modelling to derive more robust insights. To address this, we employed both LDA and BERTopic with transformer embeddings. These approaches complement each other: LDA captures the broader thematic structure or “big picture” (Yadav et al., 2025; Kushwaha & Kaur, 2025), while BERTopic provides greater contextual depth and detail (Grootendorst, 2022; EECSI, 2024).
   
-The above visualisations, give conflicting signals and justify modelling to gain actual insights.
-It was decided to use LDA and BERTopic with transformer embeddings. LDA and BERTopic complements each other as the former covers the ‘big picture’ or breadth (Yadav et al., 2025; Kushwaha & Kaur, 2025) while the latter captures depth or details (Grootendorst, 2022; EECSI, 2024) .
 
 ## Chapter 3: Topic Modelling
 ## 3.1 Importing Libraries, Corpus and Vectorisation
