@@ -89,7 +89,7 @@ Topic modelling enables the discovery of user perspectives, effectively tapping 
  
 Mobile apps are critical customer touchpoints for sportswear brands in the 21st century. A poor app experience leads to low ratings, negative reviews, reduced engagement, and ultimately diminished user retention and brand loyalty.  
 
-User reviews often contain rich but unstructured text. Manual analysis is time‑consuming, and without systematic processing, valuable customer insights risk being underutilized or ignored.  
+User reviews often contain rich but unstructured text. Manual analysis is time‑consuming, and without systematic processing, valuable customer insights risk being underutilised or ignored.  
 
 Hence, a data‑driven approach is needed to understand users’ concerns and satisfaction drivers. The business goal is to **enhance user experience and engagement for the mobile applications of the four brands** by leveraging insights derived from reviews.  
 
@@ -127,7 +127,7 @@ ii)	score
 iii)	content
 
 ## 2.2.3 Exploratory Data Analysis (EDA)
-Initial EDA provided the schema of the dataset (2 in the caption refers to section in the Python script) Fig 2.1 & 2.2
+Initial EDA provided the schema of the dataset (2 in the caption refers to the section in the Python script) Fig 2.1 & 2.2
 
 <div style="text-align:center; margin-bottom: 1rem;"><div><strong>Fig 2.1 — Schema Snapshot</strong></div><img src="/assets/images/Fig2_1 - Schema.png" width="650"></div>
 <div style="text-align:center; margin-bottom: 1rem;">
@@ -137,8 +137,8 @@ Initial EDA provided the schema of the dataset (2 in the caption refers to secti
 
 
  
-Initial data audit revealed sparsity of ‘reply_content’ ~ 93% (Fig 2.3) and attribute was hence not used.
-Audit of Missing Values and Spares columns (Fig 2.4) reveals that there was no missing values in other columns besides “reply_content”.
+An initial data audit revealed sparsity of ‘reply_content’ ~ 93% (Fig 2.3) and the attribute was hence not used.
+Audit of Missing Values and Spares columns (Fig 2.4) reveals that there were no missing values in other columns besides “reply_content”.
 Fig 2.4	Fig 2.5
  	 
 <div style="text-align:center; margin-bottom: 1rem;">
@@ -158,7 +158,7 @@ Fig 2.4	Fig 2.5
 
 ## 2.3 Cleaning & Preprocessing: Lowercasing, stopwords, lemmatization
 ## 2.3.1 Duplicate and Missing Content Audit
-Audit was done on possible duplicates and  missing contents on the attributes in use – brand, content and scores. The audit confirmed that  there were no duplicates, missing contents and scores were valid within the range of 1 to 5 (Fig 2.6).
+Audit was done on possible duplicates and  missing contents on the attributes in use – brand, content and scores. The audit confirmed that there were no duplicates, missing contents and scores were valid within the range of 1 to 5 (Fig 2.6).
 
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 2.6 — Audit of Duplicates and Missing Contents</strong></div>
