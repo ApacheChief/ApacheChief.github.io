@@ -490,11 +490,12 @@ These issues directly affect customer satisfaction because they occur at critica
 
 • 	Strengthen fulfilment reliability
 
-Optimise last‑mile delivery partners and introduce proactive delivery notifications.
+-  Optimise last‑mile delivery partners and introduce proactive delivery notifications.
 
 • 	Streamline customer service workflows
 
-Reduce response times and automate triage for common issues (e.g., refund status, order tracking).
+-  Reduce response times and automate triage for common issues (e.g., refund status, order tracking).
+-  
 These improvements address the operational bottlenecks that surfaced repeatedly in LDA and BERTopic topics.
 
 ## 6.2 Enhance App & Experience Issues: Navigation, Sizing, Checkout, Reply Engagement
@@ -512,19 +513,19 @@ The topic models highlighted several UX‑specific issues:
 
 • 	Improve navigation pathways
 
-Simplify menu structures and reduce the number of taps required to complete common tasks.
+-  Simplify menu structures and reduce the number of taps required to complete common tasks.
 
 • 	Optimise checkout flow
 
-Introduce error‑proofing, auto‑save carts, and alternative payment methods.
+-  Introduce error‑proofing, auto‑save carts, and alternative payment methods.
 
 • 	Add sizing guidance
 
-Use fit‑prediction tools or community‑sourced sizing feedback to reduce returns.
+-  Use fit‑prediction tools or community‑sourced sizing feedback to reduce returns.
 
 • 	Increase developer engagement
 
-Adopt Gymshark’s personalised reply model to build trust and close the feedback loop.
+-  Adopt Gymshark’s personalised reply model to build trust and close the feedback loop.
 
 These enhancements directly target the friction points identified in the topic clusters.
 
@@ -690,6 +691,32 @@ Given that app reviews can sometimes contain personal identifiers, the data was 
 
 **Mitigation:** We used interpretable models where possible (e.g., Naive Bayes, Decision Trees, Random Forest feature importance) and complemented them with explainable outputs such as topic modelling visualisations and labelled clusters. The rationale for model choices was documented to ensure clarity and lecturers' review.
 
+## References
+
+* adidas. (2026, January 29). *adidas reports record revenues in 2025 and launches share buyback*. adidas AG.
+* Blei, D. M., Ng, A. Y., & Jordan, M. I. (2003). Latent Dirichlet Allocation. *Journal of Machine Learning Research*, 3, 993–1022.
+* Bruurs, K. (2025, October/November). *Sportswear App Reviews (Google Play)*. Kaggle.
+* Drapers. (2025, November). *Gymshark revenues hit £600m*. Drapers Online.
+* EECSI Conference Proceedings. (2024). Leveraging transformer-based topic modeling using BERTopic. *Proceedings of the 11th Electrical Engineering, Computer Science and Informatics Conference (EECSI 2024)*.
+* Google Cloud. (n.d.). *GDPR and Google Cloud*. Google. Retrieved January 31, 2026.
+* Grootendorst, M. (2022). BERTopic: Neural topic modeling with a class-based TF-IDF procedure. *arXiv preprint arXiv:2203.05794*.
+* Heizer, J., Render, B., & Munson, C. (2020). *Operations management: Sustainability and supply chain management* (13th ed.). Pearson.
+* Iacob, C., & Harrison, R. (2013). Retrieving and analyzing mobile apps feature requests from online reviews. *2013 10th IEEE Working Conference on Mining Software Repositories (MSR)*, 41–44.
+* Jurafsky, D., & Martin, J. H. (2021). *Speech and language processing* (3rd ed.). Pearson.
+* Kushwaha, R., & Kaur, P. (2025). A federated LDA-based approach for topic modelling. *Intelligent Decision Technologies*. IOS Press.
+* Li, X., Wu, C., & Mai, F. (2021). The effect of online review response strategies on customer engagement: Evidence from a mobile app platform. *Information Systems Research*, 32(3), 723–744.
+* Maalej, W., Kurtanović, Z., Nabil, H., & Stanik, C. (2016). On the automatic classification of app reviews. *Empirical Software Engineering*, 21(1), 311–341.
+* Manning, C. D., Raghavan, P., & Schütze, H. (2008). *Introduction to information retrieval*. Cambridge University Press.
+* Nike, Inc. (2025). *Form 10-K Annual Report* (p. 32).
+* Personal Data Protection Commission Singapore. (n.d.). *Overview of PDPA*. Singapore Government. Retrieved January 31, 2026.
+* Puma SE. (2025). *Q3 2025 results and FY2025 outlook* (p. 5). Puma SE.
+* Röder, M., Both, A., & Hinneburg, A. (2015). Exploring the space of topic coherence measures. *Proceedings of the Eighth ACM International Conference on Web Search and Data Mining* (pp. 399–408). ACM.
+* Slack, N., Brandon-Jones, A., & Burgess, N. (2022). *Operations management* (10th ed.). Pearson.
+* Stevens, K., Kegelmeyer, P., Andrzejewski, D., & Buttler, D. (2012). Exploring topic coherence over many models and many topics. *Proceedings of the 2012 Joint Conference on EMNLP and CoNLL*, 952–961.
+* Wang, Y., & Chaudhry, A. (2018). When and how managers’ responses to online reviews affect subsequent reviews. *Journal of Marketing Research*, 55(2), 163–177.
+* Wirth, R., & Hipp, J. (2000). *CRISP-DM: Towards a standard process model for data mining*. CRISP-DM Consortium.
+* Yadav, A. K., Gupta, T., Kumar, M., & Yadav, D. (2025). A hybrid model integrating LDA, BERTopic, and clustering for enhanced topic modeling. *Quality & Quantity*, 59(3), 2381–2408. Springer.
+* Yılmaz, İ. (2024). *LLM vs. LDA: Choosing the Right Approach for Text Analysis*.
 
 ## Source Codes and Datasets
 ## Data & Code Access
