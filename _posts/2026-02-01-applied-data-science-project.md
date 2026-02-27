@@ -693,7 +693,7 @@ Given that app reviews can sometimes contain personal identifiers, the data was 
 
 **Mitigation:** We used interpretable models where possible (e.g., Naive Bayes, Decision Trees, Random Forest feature importance) and complemented them with explainable outputs such as topic modelling visualisations and labelled clusters. The rationale for model choices was documented to ensure clarity and lecturers' review.
 
-## References
+## Bibliography
 
 * adidas. (2026, January 29). *adidas reports record revenues in 2025 and launches share buyback*. adidas AG.
 * Blei, D. M., Ng, A. Y., & Jordan, M. I. (2003). Latent Dirichlet Allocation. *Journal of Machine Learning Research*, 3, 993–1022.
