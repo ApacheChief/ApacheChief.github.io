@@ -44,7 +44,7 @@ The title of the project is: **“Enhancing Sportswear Apps User Experience thro
 • 	Comparative analysis (cross‑validation of insights)
 
 
-## II.IV. Evaluation & Recommendations
+## II.IV Evaluation & Recommendations
 • 	Model performance metrics (coherence vs perplexity)
 
 • 	Analytical Limitations and Gaps:
