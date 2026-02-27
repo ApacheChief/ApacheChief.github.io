@@ -82,21 +82,26 @@ In accordance with the project requirements,  our team followed the Cross Indust
                  <p align = "center"> Source: Wirth & Hipp, 2000 </p>
 
 ## 1.4	Contribution
-The use of topic modelling to perform discovery of app users is effectively tapping on the consumer pulse of the app users on their opinions of the app.  Topic modelling with the appropriate techniques applied will uncover both the breadth and depth of users’ sentiments and gain insights in areas where the app can be enhanced/improved.
+Topic modelling enables the discovery of user perspectives, effectively tapping into the consumer pulse of app reviews. With appropriate techniques, it uncovers both the breadth and depth of user sentiment and highlights areas for app enhancement.
+
 
 ## 2.1 Business Understanding
-Mobile apps are keys to customer touchpoints for sportswear brands in the 21st century. Poor app experience will lead to low ratings, negative reviews and reduced app engagement, thereby reducing user retention and brand loyalty.
-Users' reviews often contain rich but unstructured text and manual analysis is too time-consuming and if these reviews are not properly used insights from customers are often underutilised or ignored. 
-Hence, there is need for a systematic, data-driven approach to understand users' concerns and satisfaction drivers.
-The business goal is to **enhance user experience and engagement for the mobile applications** of the 4 brands  by leveraging on data-dirven insights derived from the reviews.
-Our objectives are as follows:
-i)	To identify key themes and recurring discussion topics across brands through topic modelling
-ii)	To evaluation user sentiment and emotional tone using sentiment analysis techniques
-iii)	To  determine the primary drivers of user satisfaction through statistical analysis and predictive modelling
-To gain greater insights into the 4 brands, our team did research on the brand scale as expected review volume will likely be relative to the market size of each brand.
-Below is summary table of brand scale and its expected review volume.
  
-From the above table, Nike tops the chart in terms of size followed by adidas while Gymshark is the smallest of the 4 players.  Subequent exploratory will reveal that Gymshark’s review is substantially smaller than the rest of the brands.
+Mobile apps are critical customer touchpoints for sportswear brands in the 21st century. A poor app experience leads to low ratings, negative reviews, reduced engagement, and ultimately diminished user retention and brand loyalty.  
+
+User reviews often contain rich but unstructured text. Manual analysis is time‑consuming, and without systematic processing, valuable customer insights risk being underutilized or ignored.  
+
+Hence, a data‑driven approach is needed to understand users’ concerns and satisfaction drivers. The business goal is to **enhance user experience and engagement for the mobile applications of the four brands** by leveraging insights derived from reviews.  
+
+Our objectives are as follows:  
+i) To identify key themes and recurring discussion topics across brands through topic modelling  
+ii) To evaluate user sentiment and emotional tone using sentiment analysis techniques  
+iii) To determine the primary drivers of user satisfaction through statistical analysis and predictive modelling  
+
+To gain deeper insights into the four brands, our team researched their relative market scale, as expected review volume is likely proportional to brand size.  
+
+From this analysis, Nike tops the chart, followed by adidas, while Gymshark is the smallest player. Subsequent exploration confirms that Gymshark’s review volume is substantially lower than that of the other brands.
+
 
 ### 2.2 Data Preparation
 ## 2.2.1 Ethical Considerations
