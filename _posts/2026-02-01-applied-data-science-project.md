@@ -236,7 +236,8 @@ Finally, we prepare a dictionary and corpus in the format required by Gensim’s
   <img src="/assets/images/Fig3_3 - Importing Dict.png" width="650">
 </div>
  
-With the above done,  modelling  next…
+With the preprocessing complete,  I proceeded with modelling.
+
 ## 3.2 LDA Modelling 
 ## 3.2.1 Hyperparameter Tuning
 Hyperparameter tuning of 5, 10 and 15 topics was performed  and 5 topics came up top at a Coherence score of  0.504 (Fig 3.4).
