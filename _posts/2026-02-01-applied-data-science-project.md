@@ -99,6 +99,8 @@ ii) To evaluate user sentiment and emotional tone using sentiment analysis techn
 iii) To determine the primary drivers of user satisfaction through statistical analysis and predictive modelling  
 
 To gain deeper insights into the four brands, our team researched their relative market scale, as expected review volume is likely proportional to brand size.  
+<img width="915" height="581" alt="image" src="https://github.com/user-attachments/assets/94f12af5-a30c-463a-901a-4ceef6b96436" />
+
 
 From this analysis, Nike tops the chart, followed by adidas, while Gymshark is the smallest player. Subsequent exploration confirms that Gymshark’s review volume is substantially lower than that of the other brands.
 
