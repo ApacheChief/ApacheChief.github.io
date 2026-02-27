@@ -50,9 +50,13 @@ The title of the project is: **“Enhancing Sportswear Apps User Experience thro
 • 	Analytical Limitations and Gaps:
 
   • 	Reliance on rating scores as proxy for satisfaction
+  
   • 	Sparse developer response data
+  
   • 	Brand imbalance
+  
   • 	External factors not incorporated
+  
 .  Appropriate recommendations grounded on operations management and marketing principles
 
 ## II.V AI Ethics
