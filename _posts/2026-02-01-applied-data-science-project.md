@@ -486,7 +486,7 @@ These issues directly affect customer satisfaction because they occur at critica
 
 • 	Improve inventory visibility
 
-Implement real‑time stock updates to reduce “item unavailable” or “cannot add to cart” complaints.
+- Implement real‑time stock updates to reduce “item unavailable” or “cannot add to cart” complaints.
 
 • 	Strengthen fulfilment reliability
 
