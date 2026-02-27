@@ -137,7 +137,7 @@ Initial EDA provided the schema of the dataset (2 in the caption refers to the s
 
 
  
-An initial data audit revealed sparsity of ‘reply_content’ ~ 93% (Fig 2.5) and the attribute was hence not used.
+An initial data audit revealed sparsity of ‘reply_content’ ~ 93% (Figs 2.3/2.5) and the attribute was hence not used.
 Audit of Missing Values and Spares columns (Fig 2.4) reveals that there were no missing values in other columns besides “reply_content”
 (Fig 2.4	Fig 2.5)
  	 
