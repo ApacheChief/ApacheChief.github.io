@@ -391,9 +391,11 @@ BERTopic naturally produced 10 micro‑topics because it clusters text at a more
 The brand‑wise topic distribution reveals how frequently each theme appears across Nike, Adidas, Puma, and Gymshark (Fig 4.2).
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 4.2 — Brand‑Wise Topic Distribution</strong></div>
-  <img src="/assets/images/Fig4_2 - Brand Wise Distribution.png" width="650">
+  <img src="/assets/images/Fig4_2-Brand-Wise Distribution 1of2.png" width="650">
 </div>
- 
+ <div style="text-align:center; margin-bottom: 1rem;">
+    <img src="/assets/images/Fig4_2-Brand-Wise Distribution 2of2.png" width="650">
+</div>
 
 ## Key observations:
 • 	Nike, Adidas, and Puma show relatively similar distributions across the five themes.
