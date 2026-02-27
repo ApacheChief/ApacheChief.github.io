@@ -321,7 +321,9 @@ The table below summarises the key BERTopic topics and their representative term
   <div><strong>Fig 3.10 — BERTopic & Representative Terms</strong></div>
   <img src="/assets/images/Fig3_10 BERTopic & Rep Terms.png" width="650">
 </div>
- 
+
+Note: The categories below synthesize patterns across the entire tuned BERTopic model, not only the top 10 topics shown in Fig. 3.10. While the figure highlights the most frequent clusters, additional tokens (e.g., “navigate,” “interface,” “service,” “support”) appear in lower-ranked topics outside this excerpt.
+
 
 Across the topics, several patterns emerge:
 
