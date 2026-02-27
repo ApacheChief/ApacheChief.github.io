@@ -108,15 +108,24 @@ From this analysis, Nike tops the chart, followed by adidas, while Gymshark is t
 Our  anonymised dataset was obtained from Kaggle (Bruurs, 2005) and extracted using open-source google-play-scraper Python library. Reviews are pre-moderated by Google for quality and trustworthiness and since data use and collection complies with Google Play’s terms, it therefore aligns with GDPR(EU) and PDPA(Singapore) standards.
 ## 2.2.2 Size and Attribute of Dataset
 The data set consisted of 6,446 Google Play reviews, and the following key fields:
+
 i)	Brand
+
 ii)	Score
+
 iii)	at (date and time of review)
+
 iv)	content (review text)
+
 Fields like “review Id”, “reply_content”, “thumbs_up” and  “review_created_version” were either irrelevant or too sparse and were excluded from modelling.
 For topic modelling the following fields were used:
+
 i)	brand
+
 ii)	score
+
 iii)	content
+
 ## 2.2.3 Exploratory Data Analysis (EDA)
 Initial EDA provided the schema of the dataset (ref: 2 – herein ref here refers to the Python script section number) Fig 2.1 & 2.2
 
