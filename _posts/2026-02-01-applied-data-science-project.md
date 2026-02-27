@@ -177,7 +177,7 @@ This section assigns appropriate dtype to brand  also compute review length to g
 </div>
 
 ## 2.4 Post Transformation EDA
-Words curated from research articles (Maalej et al., 2016; Guzman & Maalej, 2014; Iacob & Harrison, 2013)  were used to plot unigrams for a feel of the topics therein (Fig 2.8a , 2.8b).
+Words curated from research articles (Maalej et al., 2016; Guzman & Maalej, 2014; Iacob & Harrison, 2013)  were used to plot unigrams for an initial overview of the topics  (Fig 2.8a , 2.8b).
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 2.8a — Unigram Extraction</strong></div>
   <img src="/assets/images/Fig2_8a - Unigram.png" width="650">
