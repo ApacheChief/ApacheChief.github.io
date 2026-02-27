@@ -64,15 +64,16 @@ Appropriate recommendations grounded on operations management and marketing prin
  
 ## Chapter 1: Introduction & Framework
 ## 1.1	Project Context
-The requirement of this project is to make use of ML techniques that we have learnt in both PDC1 & 2 to deliver solutions with insights for business. The objective of our project is to  enhance sportswear app experience through the application of learnt analytics so as to  provided insights, evaluation and deliver appropriat recommendations for improvements to the app in order to enhance user experience.
+The project requires the use of ML techniques that we have learnt in both PDC1 & 2 to deliver business insights. The objective of our project is to  enhance sportswear app experience through the application of learnt analytics so as to  provide insights, evaluation and deliver appropriate recommendations for improvements to the app in order to enhance user experience.
 
 The purpose of this content is to showcase the work completed for the above module. This is a team project in which members are required to source and scrape data from the web and apply Machine Learning (ML) techniques to generate insights, outputs, and recommendations in accordance with the CRISP-DM framework (Wirth & Hipp, 2000). For the purpose of this project, only stages 1 to 5 of the CRISP-DM framework are required.
+
 The title of the project is: **“Enhancing Sportswear Apps User Experience through Review Analytics.”** Anonymised data was obtained from Kaggle’s dataset **“Sportswear App Reviews (Google Play)”** by Kris Bruurs (Oct/Nov 2025). The data was curated through Google Play, which complies with Google Play’s terms and aligns with GDPR (EU) and PDPA (Singapore) standards (Google Cloud, n.d.; PDPC, n.d.).
 
 ## 1.2	Objectives
-To achieve this, our team decided to apply text analytics of topic modelling, sentiment analysis and predictive modelling, which will all contribute to the overall insights and with these insights recommend enhancements to the app.
+To achieve this, our team decided to apply topic modelling, sentiment analysis and predictive modelling to generate insights and recommend enhancements to the app.
 
-The first objective that I’m responsible for applies topic modelling to suss out what users talk about to derive recurring themes across the 4 brands (Nike, adidas, Puma & Gymshark).
+The first objective that I’m responsible for applies topic modelling to identify recurring themes in users discussions across the four brands: Nike, adidas, Puma & Gymshark.
 
  
 ## 1.3	Methodological Framework
