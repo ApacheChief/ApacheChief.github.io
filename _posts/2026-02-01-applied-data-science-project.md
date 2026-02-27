@@ -303,7 +303,7 @@ In addition, the Hierarchical Topic Tree illustrates how topics merge at differe
   <img src="/assets/images/Fig3_9 - BERT Hierarchical Tree.png" width="650">
 </div>
  
-(Only the top portion of the hierarchy is shown due to the full tree’s length. The top-level merges illustrate how sematically related topics cluster together.)
+(Only the top portion of the hierarchy is shown due to the full tree’s length. The top-level merges illustrate how semantically related topics cluster together.)
 
 Although the upper portion of the BERTopic hierarchy tree is dominated by repeated positive terms such as good, great, and love, this does not imply that positive sentiment dominates the dataset. This clustering occurs because BERTopic groups semantically similar embeddings at the highest level, and positive adjectives tend to be short, frequent, and lexically similar across brands. As a result, they merge early in the hierarchy due to their semantic proximity rather than their sentiment weight.
 
