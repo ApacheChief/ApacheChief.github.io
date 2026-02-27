@@ -127,7 +127,7 @@ ii)	score
 iii)	content
 
 ## 2.2.3 Exploratory Data Analysis (EDA)
-Initial EDA provided the schema of the dataset (ref: 2 – herein ref here refers to the Python script section number) Fig 2.1 & 2.2
+Initial EDA provided the schema of the dataset (2 in the caption refers to section in the Python script) Fig 2.1 & 2.2
 
 <div style="text-align:center; margin-bottom: 1rem;"><div><strong>Fig 2.1 — Schema Snapshot</strong></div><img src="/assets/images/Fig2_1 - Schema.png" width="650"></div>
 <div style="text-align:center; margin-bottom: 1rem;">
