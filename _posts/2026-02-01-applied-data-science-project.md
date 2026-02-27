@@ -723,5 +723,6 @@ Given that app reviews can sometimes contain personal identifiers, the data was 
 
 ## Source Codes and Datasets
 - [Dataset (CSV)](https://github.com/ApacheChief/sportswear-topic-modelling/blob/main/reviews.csv)
-## Project Website
-The project is hosted at: https://apachechief.github.io/
+## Project Links
+- GitHub Repository: [https://github.com/ApacheChief/ApacheChief.github.io](https://github.com/ApacheChief/ApacheChief.github.io)
+- Live Website: [https://apachechief.github.io/](https://apachechief.github.io/)
