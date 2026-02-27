@@ -195,13 +195,13 @@ To enrich the semantic representation of tokens, bigrams were also plotted. Howe
   <img src="/assets/images/Fig2_9 - Text Pre-processing.png" width="650">
 </div>
 
-Thereafter, bi-grams extraction and brand-wise comparisons were made (Fig  2.10)
+Thereafter, bi-grams extraction and brand-wise comparisons were plotted (Fig  2.10)
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 2.10 — Bi‑grams Extraction & Brand‑wise Comparison</strong></div>
   <img src="/assets/images/Fig2_10 Bi-grams extraction and brand-wise Comparisons.png" width="650">
 </div>
 
-For better visualisations, bigrams plot was constructed (Fig  2.11a, 2.11b)
+For better visualisations, bigrams plot was also constructed (Fig  2.11a, 2.11b)
 <div style="text-align:center; margin-bottom: 1rem;">
   <div><strong>Fig 2.11a — Bigrams (Part A)</strong></div>
   <img src="/assets/images/Fig2_11a - Bigrams .png" width="650">
